@@ -1,0 +1,93 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+
+# ---- Virtual environments / installed packages ----
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+site-packages/
+pip-wheel-metadata/
+
+# ---- Build / packaging outputs ----
+build/
+dist/
+wheels/
+*.whl
+*.egg-info/
+.eggs/
+
+# ---- Test / type-check / lint caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ---- Rust / Tauri / frontend (for the upcoming rewrite) ----
+target/
+node_modules/
+dist-js/
+.tauri/
+
+# ---- Local ASR model weights (large, download separately) ----
+core/models/*
+!core/models/__init__.py
+!core/models/manager.py
+!core/models/registry.py
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+*.bin
+
+# ---- Local runtime data ----
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# ---- Local configuration / secrets ----
+config.json
+.env
+.env.*
+!.env.example
+
+# ---- Local audio / media for debugging ----
+*.mp3
+*.MP3
+*.wav
+*.WAV
+*.m4a
+*.M4A
+*.flac
+*.FLAC
+*.aac
+*.AAC
+*.ogg
+*.OGG
+
+# ---- IDE / OS ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
