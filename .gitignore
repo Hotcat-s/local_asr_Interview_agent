@@ -35,11 +35,16 @@ wheels/
 coverage.xml
 htmlcov/
 
-# ---- Rust / Tauri / frontend (for the upcoming rewrite) ----
+# ---- Rust / Tauri / frontend ----
 target/
 node_modules/
 dist-js/
 .tauri/
+tauri/dist/
+tauri/node_modules/
+tauri/src-tauri/target/
+tauri/src-tauri/binaries/
+*.spec
 
 # ---- Local ASR model weights (large, download separately) ----
 core/models/*
